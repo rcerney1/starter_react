@@ -7,8 +7,8 @@ export default function Footer() {
             <div className="cs-container">
                 <div className="cs-cta">
                     <h2 className="cs-title">
-                        Building a Future with Our Help. Leave a message and our Agent will
-                        contact you shortly. We look forward to working with you!
+                        Ready to Transform Your Home?
+                        Leave us a message and a team member will reach out shortly. We’re excited to bring your vision to life with a fresh coat of paint!
                     </h2>
                     <Link to="/contact" className="cs-button-solid">
                         Contact Us Today!
@@ -56,7 +56,7 @@ export default function Footer() {
                     <ul className="cs-ul">
                         <li className="cs-li">
                             <span className="cs-header">Phone Number</span>
-                            <a href="tel:+15552866985" className="cs-contact">+1 555-286-6985</a>
+                            <a href="tel:+15552866985" className="cs-contact">+1 555-555-5555</a>
                         </li>
                         <li className="cs-li">
                             <span className="cs-header">Email Address</span>
@@ -69,7 +69,7 @@ export default function Footer() {
                         <li className="cs-li">
                             <span className="cs-header">Office Address</span>
                             <span className="cs-contact">
-                                5555 Mooresville Rd, <br />
+                                5555 Placeholder Rd, <br />
                                 Somewhere, CA, 12345
                             </span>
                         </li>
@@ -78,7 +78,7 @@ export default function Footer() {
 
                 <div className="cs-bottom">
                     <span className="cs-copyright">
-                        © Copyright 2025 - <Link className="cs-copyright-link" to="/">Archistitch</Link>
+                        © Copyright {new Date().getFullYear()} - <Link className="cs-copyright-link" to="/">Company Name</Link>
                     </span>
                     <div className="cs-terms">
                         <Link to="/terms" className="cs-copyright-link">Terms & Conditions</Link>
