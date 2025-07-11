@@ -134,21 +134,21 @@ export default function Navbar() {
 
                             <li className="cs-li">
                                 <NavLink
-                                    to="/blog"
+                                    to="/projects"
                                     className={({ isActive }) => (isActive ? "cs-li-link cs-active" : "cs-li-link")}
                                 >
-                                    Blog
+                                    Projects
                                 </NavLink>
                             </li>
 
-                            <li className="cs-li">
+                            {/* <li className="cs-li">
                                 <NavLink
                                     to="/contact"
                                     className={({ isActive }) => (isActive ? "cs-li-link cs-active" : "cs-li-link")}
                                 >
                                     Contact
                                 </NavLink>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
 

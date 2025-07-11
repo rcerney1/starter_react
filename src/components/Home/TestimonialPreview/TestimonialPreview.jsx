@@ -1,0 +1,124 @@
+import "./TestimonialPreview.css";
+import { useEffect, useState } from "react";
+import useScrollFadeIn from "../../../hooks/useScrollFadeIn";
+
+const reviews = [
+    {
+        name: "Jenny Y.",
+        desc: "Home Owner",
+        text: "This is a placeholder review. Here you can display reviews from previous clients. This gives the business good credibility and looks nice.",
+        profileImg: "https://nyc3.digitaloceanspaces.com/csimages2/Images/People/reviewbg-pet-services-840x840.jpg",
+        starsImg: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/stars5.svg"
+    },
+    {
+        name: "Terry P.",
+        desc: "Home Owner",
+        text: "This is a second placeholder review. Here you can display reviews from previous clients. This gives the business good credibility and looks nice. You can have as many reviews as you want displayed on this section and it will scroll through them!",
+        profileImg: "https://nyc3.digitaloceanspaces.com/csimages2/Images/People/reviewbg-pet-services-840x840.jpg",
+        starsImg: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/stars5.svg"
+    },
+    // Add more reviews here
+];
+
+export default function Testimonials() {
+    const [index, setIndex] = useState(0);
+    useScrollFadeIn();
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prev) => (prev + 1) % reviews.length);
+        }, 6000);
+        return () => clearInterval(interval);
+    }, []);
+
+    const prevReview = () => {
+        setIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
+    };
+
+    const nextReview = () => {
+        setIndex((prev) => (prev + 1) % reviews.length);
+    };
+
+    const review = reviews[index];
+
+    return (
+        <section id="reviews-2418">
+            <div className="cs-container">
+                <figure className="cs-card scroll-fade delay-3">
+                    <div className="cs-content">
+                        <p className="cs-title scroll-fade delay-4">What They Say</p>
+                    </div>
+                    <div className="cs-nav-buttons">
+                        <button onClick={prevReview} aria-label="Previous Review">
+                            &#10094;
+                        </button>
+                        <button onClick={nextReview} aria-label="Next Review">
+                            &#10095;
+                        </button>
+                    </div>
+                    <blockquote className="cs-blockquote scroll-fade delay-4">
+                        <img
+                            className="cs-stars"
+                            src={review.starsImg}
+                            alt="5 star review"
+                            width="136"
+                            height="20"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                        <p className="cs-review">{review.text}</p>
+                    </blockquote>
+                    <figcaption className="cs-info scroll-fade delay-5">
+                        <img
+                            className="cs-profile"
+                            src={review.profileImg}
+                            alt={`Photo of ${review.name}`}
+                            width="52"
+                            height="52"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                        <span className="cs-name">
+                            {review.name}
+                            <span className="cs-desc">{review.desc}</span>
+                        </span>
+                        <svg
+                            className="cs-profile-graphic"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="125"
+                            height="100"
+                            viewBox="0 0 125 100"
+                            aria-hidden="true"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M68.8 0 28.7 100H0L22.9 0h45.9Zm10.3 0L56.2 100h28.7L125 0H79.1Z"
+                            />
+                        </svg>
+                    </figcaption>
+                </figure>
+
+
+            </div>
+
+            <picture className="cs-background scroll-fade delay-2">
+                <source
+                    media="(max-width: 767px)"
+                    srcSet="/images/home/review.jpg"
+                />
+                <source
+                    media="(min-width: 768px)"
+                    srcSet="/images/home/test2.jpg"
+                />
+                <img
+                    src="/images/home/test2.jpg"
+                    alt=""
+                    width="630"
+                    height="877"
+                    loading="lazy"
+                    decoding="async"
+                />
+            </picture>
+        </section>
+    );
+}

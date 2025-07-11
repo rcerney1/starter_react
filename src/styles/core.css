@@ -75,9 +75,16 @@ body {
   }
 }
 
+/* Initial state for all scroll-fade elements */
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When fadeInUp class is applied, transition to visible */
 .animate-fadeInUp {
   animation: fadeInUp 0.8s ease-out forwards;
-  opacity: 0; /* ensures animation starts from 0 */
 }
 
 .delay-1 {

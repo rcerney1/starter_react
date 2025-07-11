@@ -1,11 +1,14 @@
 import "./AboutPreview.css";
+import useScrollFadeIn from "../../../hooks/useScrollFadeIn";
+
 
 export default function AboutPreview() {
+    useScrollFadeIn();
     return (
         <section id="sbs-2277">
-            <div className="cs-container">
+            <div className="cs-container scroll-fade delay-2">
                 <div className="cs-content">
-                    <div className="cs-header">
+                    <div className="cs-header scroll-fade delay-4">
                         <span className="cs-topper">Why Choose Us</span>
                         <h2 className="cs-title">Why Homeowners Trust Company Name </h2>
                     </div>
@@ -40,13 +43,13 @@ export default function AboutPreview() {
                         </div>
                         <div className="cs-image-group">
                             <ul className="cs-card-group">
-                                <li className="cs-item">
+                                <li className="cs-item scroll-fade delay-4">
                                     <img className="cs-item-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/building-white.svg" alt="building icon" />
                                     <span className="cs-number">
                                         50+<span className="cs-desc">Communities Served</span>
                                     </span>
                                 </li>
-                                <li className="cs-item black-variant">
+                                <li className="cs-item black-variant scroll-fade delay-4">
                                     <img className="cs-item-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/trophy-white.svg" alt="trophy icon" />
                                     <span className="cs-number">
                                         98%<span className="cs-desc">Customer Satisfaction Rate</span>

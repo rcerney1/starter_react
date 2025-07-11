@@ -1,0 +1,209 @@
+/*-- -------------------------- -->
+<!--          Reviews           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #reviews-2418 {
+        padding: var(--sectionPadding);
+        /* padding-top resets at 768px */
+        padding-top: 25rem;
+        position: relative;
+        overflow: hidden;
+        /* figure */
+        /* blockquote */
+        /* figcaption */
+        /* ornamental 'quote' graphic  */
+        /* background image */
+    }
+
+    #reviews-2418 .cs-container {
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    #reviews-2418 .cs-card {
+        width: 100%;
+        margin: 0;
+        margin-left: auto;
+        /* 24px - 40px */
+        padding: clamp(1.5rem, 6.66vw, 2.5rem);
+        background-color: #fff;
+        border-radius: 1rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        z-index: 1;
+    }
+
+    #reviews-2418 .cs-card:before {
+        /* background color */
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: var(--primary);
+        opacity: 0.1;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    #reviews-2418 .cs-title {
+        margin-bottom: 3rem;
+    }
+
+    #reviews-2418 .cs-blockquote {
+        width: 100%;
+        margin: 0;
+    }
+
+    #reviews-2418 .cs-stars {
+        width: 8.5rem;
+        height: auto;
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    #reviews-2418 .cs-review {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 2.5vw, 1.25rem);
+        line-height: 1.5em;
+        margin: 0 0 1rem;
+        color: var(--bodyTextColor);
+        z-index: 1;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* number of lines to show */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 7.5rem;
+        /* adjust based on line height */
+    }
+
+    #reviews-2418 .cs-review:last-of-type {
+        margin-bottom: 2.5rem;
+    }
+
+    #reviews-2418 .cs-info {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        position: relative;
+    }
+
+    #reviews-2418 .cs-profile {
+        width: 3.25rem;
+        height: 3.25rem;
+        border-radius: 50%;
+        overflow: hidden;
+        object-fit: cover;
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+    #reviews-2418 .cs-name {
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    #reviews-2418 .cs-desc {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5em;
+        color: var(--bodyTextColor);
+        display: block;
+    }
+
+    #reviews-2418 .cs-profile-graphic {
+        width: 27vw;
+        max-width: 7.8125rem;
+        height: auto;
+        /* controls fill color */
+        color: var(--primary);
+        opacity: 0.2;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    #reviews-2418 .cs-background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    #reviews-2418 .cs-background img {
+        width: 100%;
+        height: 100%;
+        /* makes image act as a background image */
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #reviews-2418 .cs-nav-buttons {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform: translateY(-50%);
+        pointer-events: none;
+        /* prevent accidental clicks on the container */
+        z-index: 2;
+    }
+
+    #reviews-2418 .cs-nav-buttons button {
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+        padding: 0.5rem;
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+        pointer-events: all;
+        /* enable click on the buttons */
+    }
+
+    #reviews-2418 .cs-nav-buttons button:hover {
+        background-color: var(--primary);
+        transform: scale(1.1);
+    }
+
+    #reviews-2418 .cs-nav-buttons svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: var(--headerColor);
+    }
+
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #reviews-2418 {
+        /* resetting the padding */
+        padding: var(--sectionPadding);
+    }
+
+    #reviews-2418 .cs-card {
+        width: 62%;
+        max-width: 46.125rem;
+    }
+}

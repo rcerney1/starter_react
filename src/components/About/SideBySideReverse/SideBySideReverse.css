@@ -1,0 +1,148 @@
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbsr-1100-1112 {
+        padding: var(--sectionPadding);
+        background-color: #f7f7f7;
+        .cs-topper {
+            color: black;
+        }
+    }
+
+    #sbsr-1100-1112 .cs-container {
+        width: 100%;
+        /* changes to 1280px at desktop */
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+
+    #sbsr-1100-1112 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        max-width: 32.625rem;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+    }
+
+    #sbsr-1100-1112 .cs-text {
+        margin-bottom: 1rem;
+    }
+
+    #sbsr-1100-1112 .cs-text:last-of-type {
+        margin-bottom: 2rem;
+    }
+
+    #sbsr-1100-1112 .cs-ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    #sbsr-1100-1112 .cs-li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #sbsr-1100-1112 .cs-h3 {
+        /* 20px - 25px */
+        font-size: 1.25rem, 3vw, 1.5625rem;
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0 0 0.75rem;
+    }
+
+    #sbsr-1100-1112 .cs-li-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 39.375rem;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+
+    #sbsr-1100-1112 .cs-image-group {
+        /* scales the whole group based on the view width size and stop when that vales equals .8em, resets at desktop */
+        font-size: min(2.235vw, 0.8em);
+        width: 40.5em;
+        height: 37.125em;
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
+    #sbsr-1100-1112 .cs-picture {
+        position: absolute;
+    }
+
+    #sbsr-1100-1112 .cs-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #sbsr-1100-1112 .cs-picture1 {
+        width: 20.1875em;
+        height: 27.9375em;
+        top: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    #sbsr-1100-1112 .cs-picture2 {
+        width: 19.0625em;
+        height: 27.5625em;
+        bottom: 0;
+        left: 0;
+    }
+
+    #sbsr-1100-1112 .cs-stripes {
+        width: 34.25em;
+        height: auto;
+        display: block;
+        position: absolute;
+        top: 5em;
+        left: 2.5em;
+        z-index: -1;
+    }
+
+    #sbsr-1100-1112 .cs-graphic {
+        width: 11.5em;
+        height: auto;
+        position: absolute;
+        bottom: 5em;
+        left: 13.875em;
+        z-index: 10;
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbsr-1100-1112 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #sbsr-1100-1112 .cs-image-group {
+        font-size: min(1.2vw, 1em);
+        flex: none;
+        /* sends it to the right in the 2nd position */
+        order: 2;
+    }
+}

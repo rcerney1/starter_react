@@ -1,11 +1,14 @@
 import "./Hero.css";
+import useScrollFadeIn from "../../../hooks/useScrollFadeIn";
 
 export default function Hero() {
+  useScrollFadeIn(); // Initialize animation
+
   return (
-    <section id="hero-1623" className="animate-fadeInUp delay-1">
+    <section id="hero-1623" className="scroll-fade delay-1">
       <div className="cs-container">
         <div className="cs-content">
-          <span className="cs-topper animate-fadeInUp delay-2">
+          <span className="cs-topper scroll-fade delay-2">
             <svg className="cs-chevron" width="49" height="15" viewBox="0 0 49 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.7">
                 <path d="M0.621948 7.49889L6.40262 15L10.343 15L4.56231 7.49889L10.343 0L6.40262 0L0.621948 7.49889Z" fill="var(--chevronColor)" />
@@ -28,15 +31,18 @@ export default function Hero() {
               </g>
             </svg>
           </span>
-          <h1 className="cs-title animate-fadeInUp delay-3">
+
+          <h1 className="cs-title scroll-fade delay-3">
             Transform Your Home With Expert Painting & Finishing
           </h1>
-          <a href="#" className="cs-button-solid animate-fadeInUp delay-4">Get Started</a>
+
+          <a href="#" className="cs-button-solid scroll-fade delay-4">Get Started</a>
+
           <div className="cs-corners" aria-hidden="true"></div>
         </div>
       </div>
 
-      <picture className="cs-background animate-fadeInUp delay-5">
+      <picture className="cs-background scroll-fade delay-5">
         <source media="(max-width: 600px)" srcSet="/images/home/house-painter.jpg" />
         <source media="(min-width: 601px)" srcSet="/images/home/house-painter.jpg" />
         <img
