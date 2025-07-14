@@ -115,7 +115,7 @@ export default function Navbar() {
                                 <ul className="cs-drop-ul">
                                     <li className="cs-drop-li">
                                         <NavLink
-                                            to="/services/service1"
+                                            to="/services/interior"
                                             className={({ isActive }) => (isActive ? "cs-li-link cs-drop-link cs-active" : "cs-li-link cs-drop-link")}
                                         >
                                             Service 1
@@ -123,7 +123,7 @@ export default function Navbar() {
                                     </li>
                                     <li className="cs-drop-li">
                                         <NavLink
-                                            to="/services/service2"
+                                            to="/services/exterior"
                                             className={({ isActive }) => (isActive ? "cs-li-link cs-drop-link cs-active" : "cs-li-link cs-drop-link")}
                                         >
                                             Service 2

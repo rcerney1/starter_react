@@ -8,9 +8,9 @@ export default function SideBySide() {
             <div className="cs-container scroll-fade delay-2">
                 <div className="cs-image-group scroll-fade delay-3">
                     <picture className="cs-picture">
-                        <source media="(max-width: 600px)" srcSet="/images/about/sbs-painter-1-m.webp" />
-                        <source media="(min-width: 601px)" srcSet="/images/about/sbs-painter-1-d.webp" />
-                        <img loading="lazy" decoding="async" src="/images/about/sbs-painter-1-d.webp" alt="painter" width="542" height="608" />
+                        <source media="(max-width: 600px)" srcSet="/src/assets/about/sbs-painter-1-m.webp" />
+                        <source media="(min-width: 601px)" srcSet="/src/assets/about/sbs-painter-1-d.webp" />
+                        <img loading="lazy" decoding="async" src="/src/assets/about/sbs-painter-1-d.webp" alt="painter" width="542" height="608" />
                     </picture>
                     <img className="cs-stripes" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/stripes-long.svg" alt="stripes" width="522" height="608" aria-hidden="true" />
                 </div>

@@ -22,7 +22,7 @@
     }
 
     #sbs-2277 .cs-topper {
-        color: black;
+        color: var(--secondary);
     }
 
     #sbs-2277 .cs-content {

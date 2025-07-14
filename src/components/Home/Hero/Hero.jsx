@@ -43,12 +43,12 @@ export default function Hero() {
       </div>
 
       <picture className="cs-background scroll-fade delay-5">
-        <source media="(max-width: 600px)" srcSet="/images/home/house-painter.jpg" />
-        <source media="(min-width: 601px)" srcSet="/images/home/house-painter.jpg" />
+        <source media="(max-width: 600px)" srcSet="src/assets/home/house-painter-m.webp" />
+        <source media="(min-width: 601px)" srcSet="src/assets/home/house-painter-d.webp" />
         <img
           loading="lazy"
           decoding="async"
-          src="/images/home/house-painter.jpg"
+          src="src/assets/home/house-painter-d.webp"
           alt="meeting"
           width="1920"
           height="1200"

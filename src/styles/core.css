@@ -1,12 +1,14 @@
 :root {
     /* Color palette */
-    --primary: #e1ccbe;
+    --primary: #97C8EB;
     --primaryLight: #ffba43;
-    --secondary: #ffba43;
+    --secondary: #4E8098; 
     --secondaryLight: #ffba43;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
-    --bodyTextColorWhite: #fafbfc;
+    --bodyTextColorWhite: #fCF7F8;
+    --grey: #CED3DC;
+    --madder: #A31621;
 
     /* Typography */
     /* 13px - 16px */

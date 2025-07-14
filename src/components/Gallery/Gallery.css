@@ -1,0 +1,111 @@
+/* Gallery.css */
+
+#projects-gallery {
+    padding: var(--sectionPadding);
+    background-color: #fff;
+
+
+    .cs-container {
+        max-width: 80rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(2rem, 5vw, 4rem);
+    }
+
+    .cs-header {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cs-filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .cs-filter {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.5rem 1.25rem;
+        background-color: transparent;
+        border: 2px solid var(--primary);
+        color: var(--primary);
+        border-radius: 100vw;
+        transition: background 0.3s, color 0.3s;
+        cursor: pointer;
+    }
+
+    .cs-filter.active,
+    .cs-filter:hover {
+        background-color: var(--primary);
+        color: #fff;
+    }
+
+    .cs-gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+        gap: clamp(1rem, 2vw, 2rem);
+    }
+
+    .cs-gallery-item {
+        position: relative;
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .cs-gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+    .cs-gallery-item:hover img {
+        transform: scale(1.05);
+    }
+
+    .cs-overlay {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        z-index: 1;
+    }
+
+    .cs-tag {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        background: var(--primary);
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.25rem;
+        display: inline-block;
+    }
+
+    .cs-title-text {
+        font-size: 0.875rem;
+        font-weight: 600;
+        background: white;
+        color: var(--headerColor);
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.25rem;
+        display: inline-block;
+    }
+
+    
+
+}
+
+.yarl__container {
+        z-index: 999999 !important;
+ }
