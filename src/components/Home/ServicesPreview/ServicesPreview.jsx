@@ -12,7 +12,7 @@ export default function ServicesPreview() {
                         <a href="#" className="cs-link">
                             <img
                                 className="cs-icon"
-                                src="/icons/paint-roller.svg"
+                                src="src/assets/home/paint-roller.svg"
                                 loading="lazy"
                                 decoding="async"
                                 alt="Paint Roller Icon"
@@ -30,7 +30,7 @@ export default function ServicesPreview() {
                         <a href="#" className="cs-link">
                             <img
                                 className="cs-icon"
-                                src="/icons/house-paint.svg"
+                                src="src/assets/home/house.svg"
                                 loading="lazy"
                                 decoding="async"
                                 alt="House Paint Icon"
@@ -48,7 +48,7 @@ export default function ServicesPreview() {
                         <a href="#" className="cs-link">
                             <img
                                 className="cs-icon"
-                                src="/icons/cabinet.svg"
+                                src="src/assets/home/cabinet.svg"
                                 loading="lazy"
                                 decoding="async"
                                 alt="Cabinet Icon"
@@ -66,7 +66,7 @@ export default function ServicesPreview() {
                         <a href="#" className="cs-link">
                             <img
                                 className="cs-icon"
-                                src="/icons/wall-repair.svg"
+                                src="src/assets/home/wall.svg"
                                 loading="lazy"
                                 decoding="async"
                                 alt="Wall Icon"

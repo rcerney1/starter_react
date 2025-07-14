@@ -3,17 +3,20 @@ import useScrollFadeIn from "../../../hooks/useScrollFadeIn";
 
 const galleryImages = [
     {
-        src: "https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg",
-        tag: "Hardscaping",
-        project: "Stonemere Patio Retreat"
-    },
-    {
-        src: "https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg",
+        src: "src/assets/home/gallery-1-d.webp",
+        srcm: "src/assets/home/gallery-1-m.webp",
         tag: "Exterior",
-        project: "Modern Brick Facade"
+        project: "Project Name"
     },
     {
-        src: "https://csimg.nyc3.digitaloceanspaces.com/Images/MISC/protest-sign.jpeg",
+        src: "src/assets/home/gallery-2-d.webp",
+        srcm: "src/assets/home/gallery-2-m.webp",
+        tag: "Hardscaping",
+        project: "Dry Wall Repair"
+    },
+    {
+        src: "src/assets/home/gallery-3-d.webp",
+        srcm: "src/assets/home/gallery-3-m.webp",
         tag: "Interior",
         project: "Cozy Living Room Revamp"
     }
@@ -35,7 +38,7 @@ export default function GalleryPreview() {
                         {galleryImages.map((image, i) => (
                             <a className={`cs-image`} href="#" key={`gallery-${i}`}>
                                 <picture className='cs-picture'>
-                                    <source media="(max-width: 600px)" srcSet={image.src} />
+                                    <source media="(max-width: 600px)" srcSet={image.srcm} />
                                     <source media="(min-width: 601px)" srcSet={image.src} />
                                     <img
                                         loading="lazy"

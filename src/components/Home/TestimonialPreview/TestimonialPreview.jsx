@@ -7,15 +7,15 @@ const reviews = [
         name: "Jenny Y.",
         desc: "Home Owner",
         text: "This is a placeholder review. Here you can display reviews from previous clients. This gives the business good credibility and looks nice.",
-        profileImg: "https://nyc3.digitaloceanspaces.com/csimages2/Images/People/reviewbg-pet-services-840x840.jpg",
-        starsImg: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/stars5.svg"
+        profileImg: "src/assets/home/review-profile-d.webp",
+        starsImg: "src/assets/home/stars5.svg"
     },
     {
         name: "Terry P.",
         desc: "Home Owner",
         text: "This is a second placeholder review. Here you can display reviews from previous clients. This gives the business good credibility and looks nice. You can have as many reviews as you want displayed on this section and it will scroll through them!",
-        profileImg: "https://nyc3.digitaloceanspaces.com/csimages2/Images/People/reviewbg-pet-services-840x840.jpg",
-        starsImg: "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/stars5.svg"
+        profileImg: "src/assets/home/house-painter-m.webp",
+        starsImg: "src/assets/home/stars5.svg"
     },
     // Add more reviews here
 ];
@@ -104,14 +104,14 @@ export default function Testimonials() {
             <picture className="cs-background scroll-fade delay-2">
                 <source
                     media="(max-width: 767px)"
-                    srcSet="/images/home/review.jpg"
+                    srcSet="src/assets/home/review-m.webp"
                 />
                 <source
                     media="(min-width: 768px)"
-                    srcSet="/images/home/test2.jpg"
+                    srcSet="src/assets/home/review-d.webp"
                 />
                 <img
-                    src="/images/home/test2.jpg"
+                    src="src/assets/home/review-d.webp"
                     alt=""
                     width="630"
                     height="877"

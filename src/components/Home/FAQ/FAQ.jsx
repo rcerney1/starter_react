@@ -57,7 +57,7 @@ export default function FAQ() {
                                             {item.question}
                                             <img
                                                 className="cs-icon"
-                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/angle-arrow.svg"
+                                                src="src/assets/home/angle-arrow.svg"
                                                 alt="toggle"
                                                 width="24"
                                                 height="24"
@@ -74,15 +74,15 @@ export default function FAQ() {
                 <picture className="cs-picture">
                     <source
                         media="(max-width: 600px)"
-                        srcSet="/images/home/faq.svg"
+                        srcSet="src/assets/home/faq.svg"
                     />
                     <source
                         media="(min-width: 601px)"
-                        srcSet="/images/home/faq.svg"
+                        srcSet="src/assets/home/faq.svg"
                     />
                     <img
-                        src="/images/home/faq.svg"
-                        alt="building"
+                        src="src/assets/home/faq.svg"
+                        alt="FAQ"
                         width="606"
                         height="473"
                     />

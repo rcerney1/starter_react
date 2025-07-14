@@ -5,9 +5,9 @@ import "yet-another-react-lightbox/styles.css";
 import "./Gallery.css";
 
 // Example placeholder imports
-import img1 from "/images/about/sbs-painter-1-d.webp";
-import img2 from "/images/about/sbs-painter-1-d.webp";
-import img3 from "/images/about/sbs-painter-1-d.webp";
+import img1 from "/src/assets/home/house-painter-d.webp";
+import img2 from "/src/assets/home/house-painter-d.webp";
+import img3 from "/src/assets/home/house-painter-d.webp";
 
 const categories = [
     { label: "All", value: "all" },

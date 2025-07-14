@@ -19,16 +19,16 @@ export default function CTA() {
             <picture className="cs-background">
                 <source
                     media="(max-width: 600px)"
-                    srcSet="/images/home/paint2.jpg"
+                    srcSet="src/assets/home/paint2-m.webp"
                 />
                 <source
                     media="(min-width: 601px)"
-                    srcSet="/images/home/paint2.jpg"
+                    srcSet="/src/assets/home/paint2-d.webp"
                 />
                 <img
                     loading="lazy"
                     decoding="async"
-                    src="/images/home/paint2.jpg"
+                    src="src/assets/home/paint2-d.webp"
                     alt="family"
                     width="1280"
                     height="568"
@@ -38,20 +38,20 @@ export default function CTA() {
             <picture className="cs-graphic cs-light">
                 <source
                     media="(max-width: 600px)"
-                    srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/splash-m.png"
+                    srcSet="src/assets/home/splash-m.webp"
                 />
                 <source
                     media="(max-width: 1023px)"
-                    srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/splash-t.png"
+                    srcSet="src/assets/home/splash-t.webp"
                 />
                 <source
                     media="(min-width: 1024px)"
-                    srcSet="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/splash.png"
+                    srcSet="src/assets/home/splash-d.webp"
                 />
                 <img
                     loading="lazy"
                     decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/splash.png"
+                    src="src/assets/home/splash-d.webp"
                     alt="graphic"
                     width="1920"
                     height="108"
