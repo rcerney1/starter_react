@@ -34,8 +34,9 @@ export default function Stats() {
                         <picture className="cs-picture">
                             <img
                                 className="cs-icon"
-                                src={`https://csimg.nyc3.digitaloceanspaces.com/Stats/${stat.icon}`}
-                                alt="icon"
+                                src={`src/assets/icons/${stat.icon}`}
+                                alt=""
+                                role="presentation"
                                 width="40"
                                 height="40"
                                 loading="lazy"
@@ -51,13 +52,13 @@ export default function Stats() {
                 ))}
             </ul>
             <picture className="cs-background">
-                <source media="(max-width: 600px)" srcSet="/images/about/stats-banner.webp" />
-                <source media="(min-width: 601px)" srcSet="/images/about/stats-banner.webp" />
+                <source media="(max-width: 600px)" srcSet="/src/assets/about/stats-banner-m.webp" />
+                <source media="(min-width: 601px)" srcSet="/src/assets/about/stats-banner-d.webp" />
                 <img
                     aria-hidden="true"
                     loading="lazy"
                     decoding="async"
-                    src="/images/about/stats-banner.webp"
+                    src="/src/assets/about/stats-banner-d.webp"
                     alt="mechanic"
                     width="1920"
                     height="283"

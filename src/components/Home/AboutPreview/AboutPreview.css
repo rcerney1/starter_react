@@ -301,3 +301,11 @@
         height: 100%;
     }
 }
+
+
+/* hide picture on mobile */
+@media only screen and (max-width: 47.99rem) {
+    #sbs-2277 .cs-picture {
+        display: none;
+    }
+}

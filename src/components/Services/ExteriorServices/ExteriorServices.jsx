@@ -1,5 +1,5 @@
 import "./ExteriorServices.css";
-import interiorImg from "/images/home/house-painter.jpg";
+import interiorImg from "/src/assets/home/house-painter-d.webp";
 import paintIcon from "/images/icons/face-grey.svg";
 import wallIcon from "/images/icons/face-grey.svg";
 import trimIcon from "/images/icons/face-grey.svg";

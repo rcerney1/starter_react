@@ -9,7 +9,7 @@ export default function SideBySideReverse() {
             <div className="cs-container scroll-fade delay-2">
                 <div className="cs-image-group scroll-fade delay-3">
                     <picture className="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcSet="s/src/assets/about/sbs-painter-1-m.webp" />
+                        <source media="(max-width: 600px)" srcSet="/src/assets/about/sbs-painter-2-m.webp" />
                         <source media="(min-width: 601px)" srcSet="/src/assets/about/sbs-painter-2-d.webp" />
                         <img loading="lazy" decoding="async" src="/src/assets/about/sbs-painter-2-d.webp" alt="man" width="323" height="447" />
                     </picture>
@@ -18,7 +18,7 @@ export default function SideBySideReverse() {
                         <source media="(min-width: 601px)" srcSet="/src/assets/about/sbs-painter-3-d.webp" />
                         <img loading="lazy" decoding="async" src="/src/assets/about/sbs-painter-3-d.webp" alt="appliance" width="305" height="441" />
                     </picture>
-                    <img className="cs-stripes" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/stripes-short.svg" alt="stripes" width="548" height="487" aria-hidden="true" />
+                    <img className="cs-stripes" loading="lazy" decoding="async" src="/src/assets/about/stripes-long.svg" alt="stripes" width="548" height="487" aria-hidden="true" />
                     
                 </div>
                 <div className="cs-content scroll-fade delay-4">

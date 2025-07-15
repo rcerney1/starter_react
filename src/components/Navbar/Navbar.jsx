@@ -49,18 +49,18 @@ export default function Navbar() {
                 <div className="cs-top-container">
                     <div className="cs-top-contact">
                         <a href="#" className="cs-top-link">
-                            <img className="cs-link-icon" src="/images/icons/phone-grey.svg" alt="phone icon" />
+                            <img className="cs-link-icon" src="/src/assets/icons/phone-grey.svg" alt="phone icon" />
                             Call us: +84 1985 33 999
                         </a>
                         <a href="#" className="cs-top-link">
-                            <img className="cs-link-icon" src="/images/icons/clock-grey.svg" alt="clock icon" />
+                            <img className="cs-link-icon" src="/src/assets/icons/clock-grey.svg" alt="clock icon" />
                             Opening hours: Mon - Sat: 8:00am To 9:00pm
                         </a>
                     </div>
                     <div className="cs-top-social">
-                        <a href="#" className="cs-social-link"><img className="cs-social-icon" src="/images/icons/face-grey.svg" alt="facebook" /></a>
-                        <a href="#" className="cs-social-link"><img className="cs-social-icon" src="/images/icons/twit-grey.svg" alt="twitter" /></a>
-                        <a href="#" className="cs-social-link"><img className="cs-social-icon" src="/images/icons/insta-grey.svg" alt="instagram" /></a>
+                        <a href="#" className="cs-social-link"><img className="cs-social-icon" src="/src/assets/icons/face-grey.svg" alt="facebook" /></a>
+                        <a href="#" className="cs-social-link"><img className="cs-social-icon" src="/src/assets/icons/twit-grey.svg" alt="twitter" /></a>
+                        <a href="#" className="cs-social-link"><img className="cs-social-icon" src="/src/assets/icons/insta-grey.svg" alt="instagram" /></a>
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@ export default function Navbar() {
                                     Services
                                     <img
                                         className="cs-drop-icon"
-                                        src="/images/icons/chev-down.svg"
+                                        src="/src/assets/icons/chev-down.svg"
                                         alt="dropdown icon"
                                     />
                                 </span>

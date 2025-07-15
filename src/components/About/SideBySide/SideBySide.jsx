@@ -12,7 +12,7 @@ export default function SideBySide() {
                         <source media="(min-width: 601px)" srcSet="/src/assets/about/sbs-painter-1-d.webp" />
                         <img loading="lazy" decoding="async" src="/src/assets/about/sbs-painter-1-d.webp" alt="painter" width="542" height="608" />
                     </picture>
-                    <img className="cs-stripes" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/stripes-long.svg" alt="stripes" width="522" height="608" aria-hidden="true" />
+                    <img className="cs-stripes" loading="lazy" decoding="async" src="/src/assets/about/stripes-long.svg" alt="stripes" width="522" height="608" aria-hidden="true" />
                 </div>
                 <div className="cs-content scroll-fade delay-3">
                     <span className="cs-topper scroll-fade delay-4">Painting since 1984</span>
@@ -28,7 +28,7 @@ export default function SideBySide() {
                         <li className="cs-li">Flexible scheduling and on-time project completion</li>
                     </ul>
                     <div className="cs-info scroll-fade delay-4">
-                        <img className="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/profile-2.png" alt="profile" width="52" height="52" />
+                        <img className="cs-icon" loading="lazy" decoding="async" src="/src/assets/about/profile-2.webp" alt="profile" width="52" height="52" />
                         <div className="cs-flex">
                             <span className="cs-name">Justin James</span>
                             <span className="cs-desc">CEO-Founder of STITCH Car Mechanics</span>

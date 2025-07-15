@@ -1,7 +1,9 @@
 // Component: Pricing.jsx
 import "./Pricing.css";
+import useScrollFadeIn from "../../../hooks/useScrollFadeIn";
 
 export default function Pricing() {
+    useScrollFadeIn();
     const plans = [
         {
             title: "Pricing Option 1",
@@ -33,14 +35,14 @@ export default function Pricing() {
 
     return (
         <section id="pricing-1103-1112">
-            <div className="cs-container">
+            <div className="cs-container scroll-fade delay-2">
                 <div className="cs-content">
                     <span className="cs-topper">Pricing</span>
                     <h2 className="cs-title">Affordable Pricing Plans</h2>
                     <p className="cs-text">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ea animi totam exercitationem dignissimos veniam, dolorem quam doloribus tempora soluta similique
                     </p>
-                    <a href="" className="cs-button-solid">Book Appointment</a>
+                    <a href="/contact" className="cs-button-solid">Book Appointment</a>
                 </div>
                 <ul className="cs-card-group">
                     {plans.map((plan, idx) => (
@@ -59,7 +61,7 @@ export default function Pricing() {
                                             aria-hidden="true"
                                             loading="lazy"
                                             decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mech-check.svg"
+                                            src="/src/assets/icons/mech-check.svg"
                                             alt="checkmark"
                                             width="18"
                                             height="18"
