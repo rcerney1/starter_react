@@ -4,11 +4,6 @@ import "yet-another-react-lightbox/styles.css";
 
 import "./Gallery.css";
 
-// Example placeholder imports
-import img1 from "/src/assets/home/house-painter-d.webp";
-import img2 from "/src/assets/home/house-painter-d.webp";
-import img3 from "/src/assets/home/house-painter-d.webp";
-
 const categories = [
     { label: "All", value: "all" },
     { label: "Interior", value: "interior" },
@@ -16,11 +11,28 @@ const categories = [
     { label: "Misc", value: "misc" },
 ];
 
-const allImages = [
-    { src: img1, category: "interior", title: "Living Room Repaint", tag: "Interior" },
-    { src: img2, category: "exterior", title: "Exterior Siding Refresh", tag: "Exterior" },
-    { src: img3, category: "misc", title: "Cabinet Refinish", tag: "Misc" },
-];
+// Dynamically import all .webp images from gallery folder
+const galleryImports = import.meta.glob("/src/assets/gallery/*.webp", { eager: true });
+
+// Convert import object to array of { src, title, category, tag }
+const allImages = Object.entries(galleryImports).map(([path, mod]) => {
+    const src = mod.default;
+    const filename = path.split("/").pop().replace(/\.webp$/, "");
+
+    let category = "misc";
+    if (filename.startsWith("interior_")) category = "interior";
+    else if (filename.startsWith("exterior_")) category = "exterior";
+
+    const readableName = filename.replace(/^(interior_|exterior_)/, "").replace(/[-_]/g, " ");
+    const title = readableName.replace(/\b\w/g, (c) => c.toUpperCase());
+
+    return {
+        src,
+        title,
+        category,
+        tag: category.charAt(0).toUpperCase() + category.slice(1),
+    };
+});
 
 export default function Gallery() {
     const [filter, setFilter] = useState("all");

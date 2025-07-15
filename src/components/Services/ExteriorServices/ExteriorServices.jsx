@@ -1,10 +1,12 @@
 import "./ExteriorServices.css";
 import interiorImg from "/src/assets/home/house-painter-d.webp";
-import paintIcon from "/images/icons/face-grey.svg";
-import wallIcon from "/images/icons/face-grey.svg";
-import trimIcon from "/images/icons/face-grey.svg";
-import cabinetIcon from "/images/icons/face-grey.svg";
-import wallpaperIcon from "/images/icons/face-grey.svg";
+import exterior1 from "/src/assets/services/exterior1.webp"
+import exterior2 from "/src/assets/services/exterior2.webp"
+import paintIcon from "/src/assets/home/paint-roller.svg";
+import hoseIcon from "/src/assets/icons/hose.svg";
+import wallIcon from "/src/assets/home/wall.svg";
+import fenceIcon from "/src/assets/icons/fence.svg";
+import windowIcon from "/src/assets/icons/window.svg";
 import useScrollFadeIn from "../../../hooks/useScrollFadeIn";
 
 export default function ExteriorServices() {
@@ -16,23 +18,23 @@ export default function ExteriorServices() {
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum quo nulla, quidem consequatur"
         },
         {
+            icon: hoseIcon,
+            title: "Power Washing",
+            desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum quo nulla, quidem consequatur"
+        },
+        {
             icon: wallIcon,
-            title: "Second Service",
+            title: "Stucco & Siding Repair",
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum quo nulla, quidem consequatur"
         },
         {
-            icon: trimIcon,
-            title: "Third Service",
+            icon: fenceIcon,
+            title: "Deck & Fence Painting",
             desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum quo nulla, quidem consequatur"
         },
         {
-            icon: cabinetIcon,
-            title: "Fourth Service",
-            desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum quo nulla, quidem consequatur"
-        },
-        {
-            icon: wallpaperIcon,
-            title: "Fifth Service",
+            icon: windowIcon,
+            title: "Exterior Trim & Fascia",
             desc: "lLorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum quo nulla, quidem consequatur"
         }
         
@@ -44,10 +46,10 @@ export default function ExteriorServices() {
                 <div className="cs-container">
                     <div className="cs-image-group scroll-fade delay-2">
                         <picture className="cs-image stagger-1">
-                            <img src={interiorImg} alt="Interior Work 1" loading="lazy" decoding="async" />
+                            <img src={exterior2} alt="Interior Work 1" loading="lazy" decoding="async" />
                         </picture>
                         <picture className="cs-image stagger-2">
-                            <img src={interiorImg} alt="Interior Work 2" loading="lazy" decoding="async" />
+                            <img src={exterior1} alt="Interior Work 2" loading="lazy" decoding="async" />
                         </picture>
                     </div>
 

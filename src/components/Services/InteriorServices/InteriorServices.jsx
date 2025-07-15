@@ -1,10 +1,11 @@
 import "./InteriorServices.css";
-import interiorImg from "/src/assets/home/house-painter-d.webp";
-import paintIcon from "/images/icons/face-grey.svg";
-import wallIcon from "/images/icons/face-grey.svg";
-import trimIcon from "/images/icons/face-grey.svg";
-import cabinetIcon from "/images/icons/face-grey.svg";
-import wallpaperIcon from "/images/icons/face-grey.svg";
+import interior1 from "/src/assets/services/interior1.webp"
+import interior2 from "/src/assets/services/interior2.webp"
+import paintIcon from "/src/assets/home/paint-roller.svg";
+import wallIcon from "/src/assets/home/wall.svg";
+import trimIcon from "/src/assets/icons/caulk.svg";
+import cabinetIcon from "/src/assets/home/cabinet.svg";
+import wallpaperIcon from "/src/assets/icons/wallpaper.svg";
 import useScrollFadeIn from "../../../hooks/useScrollFadeIn";
 
 export default function InteriorServices() {
@@ -43,10 +44,10 @@ export default function InteriorServices() {
                 <div className="cs-container">
                     <div className="cs-image-group scroll-fade delay-2">
                         <picture className="cs-image stagger-1">
-                            <img src={interiorImg} alt="Interior Work 1" loading="lazy" decoding="async" />
+                            <img src={interior2} alt="Interior Work 1" loading="lazy" decoding="async" />
                         </picture>
                         <picture className="cs-image stagger-2">
-                            <img src={interiorImg} alt="Interior Work 2" loading="lazy" decoding="async" />
+                            <img src={interior1} alt="Interior Work 2" loading="lazy" decoding="async" />
                         </picture>
                     </div>
 
