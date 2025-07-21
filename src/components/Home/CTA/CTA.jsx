@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import "./CTA.css";
 
 // ✅ Import all background and graphic images
-import paintMobile from "../../assets/home/paint2-m.webp";
-import paintDesktop from "../../assets/home/paint2-d.webp";
-import splashMobile from "../../assets/home/splash-m.webp";
-import splashTablet from "../../assets/home/splash-t.webp";
-import splashDesktop from "../../assets/home/splash-d.webp";
+import paintMobile from "../../../assets/home/paint2-m.webp";
+import paintDesktop from "../../../assets/home/paint2-d.webp";
+import splashMobile from "../../../assets/home/splash-m.webp";
+import splashTablet from "../../../assets/home/splash-t.webp";
+import splashDesktop from "../../../assets/home/splash-d.webp";
 
 export default function CTA() {
     return (
