@@ -1,9 +1,11 @@
-// Component: Pricing.jsx
 import "./Pricing.css";
 import useScrollFadeIn from "../../../hooks/useScrollFadeIn";
 
+import checkIcon from "../../../assets/icons/mech-check.svg";
+
 export default function Pricing() {
     useScrollFadeIn();
+
     const plans = [
         {
             title: "Pricing Option 1",
@@ -61,7 +63,7 @@ export default function Pricing() {
                                             aria-hidden="true"
                                             loading="lazy"
                                             decoding="async"
-                                            src="/src/assets/icons/mech-check.svg"
+                                            src={checkIcon} 
                                             alt="checkmark"
                                             width="18"
                                             height="18"
