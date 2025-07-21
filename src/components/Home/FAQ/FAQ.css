@@ -46,6 +46,10 @@
     #faq-2352 .cs-title {
         margin: 0 0 3rem;
     }
+    
+    #faq-2352 .cs-topper {
+        color:black;
+    }
 
     #faq-2352 .cs-faq-group {
         width: 100%;

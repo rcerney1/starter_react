@@ -26,7 +26,7 @@ export default function ServicesPreview() {
                                 height="48"
                                 aria-hidden="true"
                             />
-                            <h3 className="cs-h3 scroll-fade delay-4">Interior Painting</h3>
+                            <h2 className="cs-h3 scroll-fade delay-4">Interior Painting</h2>
                             <p className="cs-item-text">
                                 Transform your living spaces with clean lines, vibrant colors, and a flawless finish tailored to your home’s style.
                             </p>
@@ -44,7 +44,7 @@ export default function ServicesPreview() {
                                 height="48"
                                 aria-hidden="true"
                             />
-                            <h3 className="cs-h3 scroll-fade delay-4">Exterior Painting</h3>
+                            <h2 className="cs-h3 scroll-fade delay-4">Exterior Painting</h2>
                             <p className="cs-item-text">
                                 Boost curb appeal and protect your home with long-lasting, weather-resistant paint applied by experienced pros.
                             </p>
@@ -62,7 +62,7 @@ export default function ServicesPreview() {
                                 height="48"
                                 aria-hidden="true"
                             />
-                            <h3 className="cs-h3 scroll-fade delay-4">Cabinet Refinishing</h3>
+                            <h2 className="cs-h3 scroll-fade delay-4">Cabinet Refinishing</h2>
                             <p className="cs-item-text">
                                 Give your kitchen or bathroom a fresh, modern look with cabinet painting or staining that’s cost-effective and beautiful.
                             </p>
@@ -80,7 +80,7 @@ export default function ServicesPreview() {
                                 height="48"
                                 aria-hidden="true"
                             />
-                            <h3 className="cs-h3 scroll-fade delay-4">Drywall Repair & Prep</h3>
+                            <h2 className="cs-h3 scroll-fade delay-4">Drywall Repair & Prep</h2>
                             <p className="cs-item-text">
                                 We fix cracks, dents, and holes to create a perfectly smooth surface before we ever pick up a brush.
                             </p>
