@@ -45,7 +45,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <picture className="cs-background scroll-fade delay-5">
+      <picture className="cs-background">
         <source media="(max-width: 600px)" srcSet={painterMobile} />
         <source media="(min-width: 601px)" srcSet={painterDesktop} />
         <img
@@ -56,7 +56,6 @@ export default function Hero() {
           alt="meeting"
           width="1920"
           height="1200"
-          aria-hidden="true"
         />
       </picture>
     </section>
