@@ -9,7 +9,7 @@ import facebookIcon from "../../assets/icons/face-grey.svg";
 import twitterIcon from "../../assets/icons/twit-grey.svg";
 import instagramIcon from "../../assets/icons/insta-grey.svg";
 import dropdownIcon from "../../assets/icons/chev-down.svg";
-import logo from "../../assets/images/logos/logo.svg";
+import logo from "../../assets/logos/logo.svg";
 
 export default function Navbar() {
     const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -121,7 +121,7 @@ export default function Navbar() {
                                             to="/services/interior"
                                             className={({ isActive }) => (isActive ? "cs-li-link cs-drop-link cs-active" : "cs-li-link cs-drop-link")}
                                         >
-                                            Interior Painting
+                                            Service 1
                                         </NavLink>
                                     </li>
                                     <li className="cs-drop-li">
@@ -129,7 +129,7 @@ export default function Navbar() {
                                             to="/services/exterior"
                                             className={({ isActive }) => (isActive ? "cs-li-link cs-drop-link cs-active" : "cs-li-link cs-drop-link")}
                                         >
-                                            Exterior Painting
+                                            Service 2
                                         </NavLink>
                                     </li>
                                 </ul>
