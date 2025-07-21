@@ -18,6 +18,7 @@ export default function About() {
                     content="Learn more about Template Painters, our experienced team, other seo words"
                 />
             </Helmet>
+            {/*  */}
             <Banner
                 title="About Us"
                 breadcrumbs={[
