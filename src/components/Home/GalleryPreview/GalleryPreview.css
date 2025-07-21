@@ -207,6 +207,7 @@
     }
 
     #gallery-2297 .cs-stats {
+        
         max-width: 80rem;
         /* 48px - 120px */
         margin: clamp(3rem, 9vw, 7.5rem) auto 0;

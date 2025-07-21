@@ -45,7 +45,7 @@ export default function GalleryPreview() {
                 <div className="cs-gallery-wrapper">
                     <div className="cs-gallery scroll-fade delay-1">
                         {galleryImages.map((image, i) => (
-                            <a className="cs-image" href="#" key={`gallery-${i}`}>
+                            <a className="cs-image" href="/projects" key={`gallery-${i}`}>
                                 <picture className="cs-picture">
                                     <source media="(max-width: 600px)" srcSet={image.srcm} />
                                     <source media="(min-width: 601px)" srcSet={image.src} />

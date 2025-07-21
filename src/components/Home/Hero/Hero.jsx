@@ -39,7 +39,7 @@ export default function Hero() {
             Transform Your Home With Expert Painting & Finishing
           </h1>
 
-          <a href="#" className="cs-button-solid scroll-fade delay-4">Get Started</a>
+          <a href="/contact" className="cs-button-solid scroll-fade delay-4">Get Started</a>
 
           <div className="cs-corners" aria-hidden="true"></div>
         </div>

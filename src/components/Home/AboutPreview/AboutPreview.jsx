@@ -35,7 +35,7 @@ export default function AboutPreview() {
                                     </li>
                                 ))}
                             </ul>
-                            <a href="" className="cs-button-solid">Read More</a>
+                            <a href="/about" className="cs-button-solid">Read More</a>
                         </div>
                         <div className="cs-image-group">
                             <ul className="cs-card-group">

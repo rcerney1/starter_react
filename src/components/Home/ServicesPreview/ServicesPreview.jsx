@@ -15,7 +15,7 @@ export default function ServicesPreview() {
             <div className="cs-container">
                 <ul className="cs-card-group">
                     <li className="cs-item scroll-fade delay-2">
-                        <a href="#" className="cs-link">
+                        <a href="/services/interior" className="cs-link">
                             <img
                                 className="cs-icon"
                                 src={paintRollerIcon}
@@ -33,7 +33,7 @@ export default function ServicesPreview() {
                         </a>
                     </li>
                     <li className="cs-item scroll-fade delay-2">
-                        <a href="#" className="cs-link">
+                        <a href="/services/exterior" className="cs-link">
                             <img
                                 className="cs-icon"
                                 src={houseIcon}
