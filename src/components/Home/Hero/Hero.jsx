@@ -1,6 +1,9 @@
 import "./Hero.css";
 import useScrollFadeIn from "../../../hooks/useScrollFadeIn";
 
+import painterMobile from "../../../assets/home/house-painter-m.webp";
+import painterDesktop from "../../../assets/home/house-painter-d.webp";
+
 export default function Hero() {
   useScrollFadeIn(); // Initialize animation
 
@@ -43,12 +46,12 @@ export default function Hero() {
       </div>
 
       <picture className="cs-background scroll-fade delay-5">
-        <source media="(max-width: 600px)" srcSet="src/assets/home/house-painter-m.webp" />
-        <source media="(min-width: 601px)" srcSet="src/assets/home/house-painter-d.webp" />
+        <source media="(max-width: 600px)" srcSet={painterMobile} />
+        <source media="(min-width: 601px)" srcSet={painterDesktop} />
         <img
           loading="lazy"
           decoding="async"
-          src="src/assets/home/house-painter-d.webp"
+          src={painterDesktop}
           alt="meeting"
           width="1920"
           height="1200"

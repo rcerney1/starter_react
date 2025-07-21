@@ -1,6 +1,10 @@
 import { useState } from "react";
 import "./FAQ.css";
 
+// ✅ Import image assets
+import arrowIcon from "../../assets/home/angle-arrow.svg";
+import faqGraphic from "../../assets/home/faq.svg";
+
 const faqData = [
     {
         question: "What types of painting services do you offer?",
@@ -49,15 +53,14 @@ export default function FAQ() {
                             {faqData.map((item, index) => (
                                 <li
                                     key={index}
-                                    className={`cs-faq-item ${activeIndex === index ? "active" : ""
-                                        }`}
+                                    className={`cs-faq-item ${activeIndex === index ? "active" : ""}`}
                                 >
                                     <button className="cs-button" onClick={() => toggleFAQ(index)}>
                                         <span className="cs-button-text">
                                             {item.question}
                                             <img
                                                 className="cs-icon"
-                                                src="src/assets/home/angle-arrow.svg"
+                                                src={arrowIcon}
                                                 alt="toggle"
                                                 width="24"
                                                 height="24"
@@ -74,14 +77,14 @@ export default function FAQ() {
                 <picture className="cs-picture">
                     <source
                         media="(max-width: 600px)"
-                        srcSet="src/assets/home/faq.svg"
+                        srcSet={faqGraphic}
                     />
                     <source
                         media="(min-width: 601px)"
-                        srcSet="src/assets/home/faq.svg"
+                        srcSet={faqGraphic}
                     />
                     <img
-                        src="src/assets/home/faq.svg"
+                        src={faqGraphic}
                         alt="FAQ"
                         width="606"
                         height="473"

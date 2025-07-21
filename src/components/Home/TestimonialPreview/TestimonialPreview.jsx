@@ -2,22 +2,29 @@ import "./TestimonialPreview.css";
 import { useEffect, useState } from "react";
 import useScrollFadeIn from "../../../hooks/useScrollFadeIn";
 
+// ✅ Import all images
+import stars5 from "../../../assets/home/stars5.svg";
+import profile1 from "../../../assets/home/review-profile-d.webp";
+import profile2 from "../../../assets/home/house-painter-m.webp";
+import bgMobile from "../../../assets/home/review-m.webp";
+import bgDesktop from "../../../assets/home/review-d.webp";
+
+// ✅ Use image variables in the reviews array
 const reviews = [
     {
         name: "Jenny Y.",
         desc: "Home Owner",
         text: "This is a placeholder review. Here you can display reviews from previous clients. This gives the business good credibility and looks nice.",
-        profileImg: "src/assets/home/review-profile-d.webp",
-        starsImg: "src/assets/home/stars5.svg"
+        profileImg: profile1,
+        starsImg: stars5
     },
     {
         name: "Terry P.",
         desc: "Home Owner",
         text: "This is a second placeholder review. Here you can display reviews from previous clients. This gives the business good credibility and looks nice. You can have as many reviews as you want displayed on this section and it will scroll through them!",
-        profileImg: "src/assets/home/house-painter-m.webp",
-        starsImg: "src/assets/home/stars5.svg"
-    },
-    // Add more reviews here
+        profileImg: profile2,
+        starsImg: stars5
+    }
 ];
 
 export default function Testimonials() {
@@ -97,21 +104,13 @@ export default function Testimonials() {
                         </svg>
                     </figcaption>
                 </figure>
-
-
             </div>
 
             <picture className="cs-background scroll-fade delay-2">
-                <source
-                    media="(max-width: 767px)"
-                    srcSet="src/assets/home/review-m.webp"
-                />
-                <source
-                    media="(min-width: 768px)"
-                    srcSet="src/assets/home/review-d.webp"
-                />
+                <source media="(max-width: 767px)" srcSet={bgMobile} />
+                <source media="(min-width: 768px)" srcSet={bgDesktop} />
                 <img
-                    src="src/assets/home/review-d.webp"
+                    src={bgDesktop}
                     alt=""
                     width="630"
                     height="877"

@@ -1,22 +1,31 @@
 import "./GalleryPreview.css";
 import useScrollFadeIn from "../../../hooks/useScrollFadeIn";
 
+// ✅ Import gallery images
+import gallery1Desktop from "../../../assets/home/gallery-1-d.webp";
+import gallery1Mobile from "../../../assets/home/gallery-1-m.webp";
+import gallery2Desktop from "../../../assets/home/gallery-2-d.webp";
+import gallery2Mobile from "../../../assets/home/gallery-2-m.webp";
+import gallery3Desktop from "../../../assets/home/gallery-3-d.webp";
+import gallery3Mobile from "../../../assets/home/gallery-3-m.webp";
+
+// ✅ Updated array with imported image objects
 const galleryImages = [
     {
-        src: "src/assets/home/gallery-1-d.webp",
-        srcm: "src/assets/home/gallery-1-m.webp",
+        src: gallery1Desktop,
+        srcm: gallery1Mobile,
         tag: "Exterior",
         project: "Project Name"
     },
     {
-        src: "src/assets/home/gallery-2-d.webp",
-        srcm: "src/assets/home/gallery-2-m.webp",
+        src: gallery2Desktop,
+        srcm: gallery2Mobile,
         tag: "Hardscaping",
         project: "Dry Wall Repair"
     },
     {
-        src: "src/assets/home/gallery-3-d.webp",
-        srcm: "src/assets/home/gallery-3-m.webp",
+        src: gallery3Desktop,
+        srcm: gallery3Mobile,
         tag: "Interior",
         project: "Cozy Living Room Revamp"
     }
@@ -36,8 +45,8 @@ export default function GalleryPreview() {
                 <div className="cs-gallery-wrapper">
                     <div className="cs-gallery scroll-fade delay-1">
                         {galleryImages.map((image, i) => (
-                            <a className={`cs-image`} href="#" key={`gallery-${i}`}>
-                                <picture className='cs-picture'>
+                            <a className="cs-image" href="#" key={`gallery-${i}`}>
+                                <picture className="cs-picture">
                                     <source media="(max-width: 600px)" srcSet={image.srcm} />
                                     <source media="(min-width: 601px)" srcSet={image.src} />
                                     <img
@@ -63,8 +72,6 @@ export default function GalleryPreview() {
                     Check Out All Projects
                 </a>
             </div>
-
-
 
             <div className="cs-stats">
                 <div className="cs-stat scroll-fade delay-2">

@@ -1,6 +1,12 @@
 import "./ServicesPreview.css";
 import useScrollFadeIn from "../../../hooks/useScrollFadeIn";
 
+// ✅ Import icons
+import paintRollerIcon from "../../../assets/home/paint-roller.svg";
+import houseIcon from "../../../assets/home/house.svg";
+import cabinetIcon from "../../../assets/home/cabinet.svg";
+import wallIcon from "../../../assets/home/wall.svg";
+
 export default function ServicesPreview() {
     useScrollFadeIn();
 
@@ -12,7 +18,7 @@ export default function ServicesPreview() {
                         <a href="#" className="cs-link">
                             <img
                                 className="cs-icon"
-                                src="src/assets/home/paint-roller.svg"
+                                src={paintRollerIcon}
                                 loading="lazy"
                                 decoding="async"
                                 alt="Paint Roller Icon"
@@ -20,7 +26,7 @@ export default function ServicesPreview() {
                                 height="48"
                                 aria-hidden="true"
                             />
-                            <h3 className="cs-h3 cs-h3 scroll-fade delay-4">Interior Painting</h3>
+                            <h3 className="cs-h3 scroll-fade delay-4">Interior Painting</h3>
                             <p className="cs-item-text">
                                 Transform your living spaces with clean lines, vibrant colors, and a flawless finish tailored to your home’s style.
                             </p>
@@ -30,7 +36,7 @@ export default function ServicesPreview() {
                         <a href="#" className="cs-link">
                             <img
                                 className="cs-icon"
-                                src="src/assets/home/house.svg"
+                                src={houseIcon}
                                 loading="lazy"
                                 decoding="async"
                                 alt="House Paint Icon"
@@ -38,7 +44,7 @@ export default function ServicesPreview() {
                                 height="48"
                                 aria-hidden="true"
                             />
-                            <h3 className="cs-h3 cs-h3 scroll-fade delay-4">Exterior Paiting</h3>
+                            <h3 className="cs-h3 scroll-fade delay-4">Exterior Painting</h3>
                             <p className="cs-item-text">
                                 Boost curb appeal and protect your home with long-lasting, weather-resistant paint applied by experienced pros.
                             </p>
@@ -48,7 +54,7 @@ export default function ServicesPreview() {
                         <a href="#" className="cs-link">
                             <img
                                 className="cs-icon"
-                                src="src/assets/home/cabinet.svg"
+                                src={cabinetIcon}
                                 loading="lazy"
                                 decoding="async"
                                 alt="Cabinet Icon"
@@ -56,7 +62,7 @@ export default function ServicesPreview() {
                                 height="48"
                                 aria-hidden="true"
                             />
-                            <h3 className="cs-h3 scroll-fade delay-4"> Cabinet Refinishing</h3>
+                            <h3 className="cs-h3 scroll-fade delay-4">Cabinet Refinishing</h3>
                             <p className="cs-item-text">
                                 Give your kitchen or bathroom a fresh, modern look with cabinet painting or staining that’s cost-effective and beautiful.
                             </p>
@@ -66,7 +72,7 @@ export default function ServicesPreview() {
                         <a href="#" className="cs-link">
                             <img
                                 className="cs-icon"
-                                src="src/assets/home/wall.svg"
+                                src={wallIcon}
                                 loading="lazy"
                                 decoding="async"
                                 alt="Wall Icon"
@@ -74,7 +80,7 @@ export default function ServicesPreview() {
                                 height="48"
                                 aria-hidden="true"
                             />
-                            <h3 className="cs-h3 cs-h3 scroll-fade delay-4">Drywall Repair & Prep</h3>
+                            <h3 className="cs-h3 scroll-fade delay-4">Drywall Repair & Prep</h3>
                             <p className="cs-item-text">
                                 We fix cracks, dents, and holes to create a perfectly smooth surface before we ever pick up a brush.
                             </p>
