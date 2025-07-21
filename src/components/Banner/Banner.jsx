@@ -1,5 +1,7 @@
 import "./Banner.css";
-import useScrollFadeIn from "../../hooks/useScrollFadeIn";
+import HeroM from "/src/assets/about/aboutHero-m.webp"
+import HeroD from "/src/assets/about/aboutHero-d.webp"
+
 
 export default function Banner({ title, breadcrumbs = [] }) {
     return (
@@ -23,15 +25,15 @@ export default function Banner({ title, breadcrumbs = [] }) {
             <picture className="cs-background scroll-fade delay-2">
                 <source
                     media="(max-width: 600px)"
-                    srcSet="/src/assets/about/aboutHero-m.webp"
+                    srcSet={HeroM}
                 />
                 <source
                     media="(min-width: 601px)"
-                    srcSet="/src/assets/about/aboutHero-d.webp"
+                    srcSet={HeroD}
                 />
                 <img
                     decoding="async"
-                    src="/src/assets/about/aboutHero-d.webp"
+                    src={HeroD}
                     alt="Freshly painted interior wall"
                     width="1280"
                     height="568"
