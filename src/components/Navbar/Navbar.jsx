@@ -121,7 +121,7 @@ export default function Navbar() {
                                             to="/services/interior"
                                             className={({ isActive }) => (isActive ? "cs-li-link cs-drop-link cs-active" : "cs-li-link cs-drop-link")}
                                         >
-                                            Service 1
+                                            Interior Painting
                                         </NavLink>
                                     </li>
                                     <li className="cs-drop-li">
@@ -129,7 +129,7 @@ export default function Navbar() {
                                             to="/services/exterior"
                                             className={({ isActive }) => (isActive ? "cs-li-link cs-drop-link cs-active" : "cs-li-link cs-drop-link")}
                                         >
-                                            Service 2
+                                            Exterior Painting
                                         </NavLink>
                                     </li>
                                 </ul>
