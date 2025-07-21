@@ -1,5 +1,4 @@
 import BaseLayout from "../layout/BaseLayout";
-import Banner from "../components/Banner/Banner";
 import ContactPage from "../components/Contact/ContactPage";
 import { Helmet } from "react-helmet-async"
 
