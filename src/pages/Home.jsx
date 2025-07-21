@@ -19,6 +19,7 @@ export default function Home(){
                     name="description"
                     content="testing"
                 />
+                <meta name="google-site-verification" content="Z6BdZojcu6kjTw2AxT4dGPad3Ajf2TA0ao49f8g9poQ" />
             </Helmet>
             <Hero />
             <ServicesPreview />
