@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./FAQ.css";
 
 // ✅ Import image assets
-import arrowIcon from "/home/ryanc/2025/freelance/starters/my-starter/src/assets/home/angle-arrow.svg";
-import faqGraphic from "/home/ryanc/2025/freelance/starters/my-starter/src/assets/home/faq.svg";
+import arrowIcon from "../../../assets/home/angle-arrow.svg";
+import faqGraphic from "../../../assets/home/faq.svg";
 
 const faqData = [
     {
