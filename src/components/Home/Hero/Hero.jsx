@@ -49,7 +49,8 @@ export default function Hero() {
         <source media="(max-width: 600px)" srcSet={painterMobile} />
         <source media="(min-width: 601px)" srcSet={painterDesktop} />
         <img
-          loading="lazy"
+          loading="eager"
+          fetchPriority="high"
           decoding="async"
           src={painterDesktop}
           alt="meeting"
