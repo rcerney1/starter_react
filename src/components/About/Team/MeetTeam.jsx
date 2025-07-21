@@ -1,5 +1,33 @@
 import "./MeetTeam.css";
 
+
+import person1Mobile from "../../../assets/about/person1-m.webp";
+import person1Desktop from "../../../assets/about/person1-d.webp";
+import person2Mobile from "../../../assets/about/person2-m.webp";
+import person2Desktop from "../../../assets/about/person2-d.webp";
+import person3Mobile from "../../../assets/about/person3-m.webp";
+import person3Desktop from "../../../assets/about/person3-d.webp";
+import person4Mobile from "../../../assets/about/person4-m.webp";
+import person4Desktop from "../../../assets/about/person4-d.webp";
+
+import facebookIcon from "../../../assets/icons/face-grey.svg";
+import twitterIcon from "../../../assets/icons/twit-grey.svg";
+import instagramIcon from "../../../assets/icons/insta-grey.svg";
+
+
+const photos = {
+    1: { m: person1Mobile, d: person1Desktop },
+    2: { m: person2Mobile, d: person2Desktop },
+    3: { m: person3Mobile, d: person3Desktop },
+    4: { m: person4Mobile, d: person4Desktop },
+};
+
+const socialIcons = {
+    face: facebookIcon,
+    twit: twitterIcon,
+    insta: instagramIcon,
+};
+
 export default function MeetTeam() {
     const team = [
         {
@@ -60,16 +88,16 @@ export default function MeetTeam() {
                             <picture className="cs-picture">
                                 <source
                                     media="(max-width: 600px)"
-                                    srcSet={`/src/assets/about/person${member.photo}-m.webp`}
+                                    srcSet={photos[member.photo].m}
                                 />
                                 <source
                                     media="(min-width: 601px)"
-                                    srcSet={`/src/assets/about/person${member.photo}-d.webp`}
+                                    srcSet={photos[member.photo].d}
                                 />
                                 <img
                                     loading="lazy"
                                     decoding="async"
-                                    src={`/src/assets/about/person${member.photo}-d.webp`}
+                                    src={photos[member.photo].d}
                                     alt={member.name}
                                     width="305"
                                     height="338"
@@ -92,7 +120,7 @@ export default function MeetTeam() {
                                                 className="cs-icon"
                                                 loading="lazy"
                                                 decoding="async"
-                                                src={`/src/assets/icons/${platform}-grey.svg`}
+                                                src={socialIcons[platform]}
                                                 alt={platform}
                                                 width="12"
                                                 height="12"

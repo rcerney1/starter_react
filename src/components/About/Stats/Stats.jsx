@@ -1,29 +1,38 @@
 import "./Stats.css";
 import useScrollFadeIn from "../../../hooks/useScrollFadeIn";
 
+// ✅ Import all icons and background images
+import iconPerson from "../../../assets/icons/person2-gold.svg";
+import iconMop from "../../../assets/icons/mop-gold.svg";
+import iconThumbs from "../../../assets/icons/thumbs-gold.svg";
+import iconAward from "../../../assets/icons/award2-gold.svg";
+import bannerMobile from "../../../assets/about/stats-banner-m.webp";
+import bannerDesktop from "../../../assets/about/stats-banner-d.webp";
+
 export default function Stats() {
     const stats = [
         {
-            icon: "person2-gold.svg",
+            icon: iconPerson,
             number: 4,
             desc: "Painters"
         },
         {
-            icon: "mop-gold.svg",
+            icon: iconMop,
             number: 3140,
             desc: "Projects Completed"
         },
         {
-            icon: "thumbs-gold.svg",
+            icon: iconThumbs,
             number: 2260,
             desc: "Satisfied Clients"
         },
         {
-            icon: "award2-gold.svg",
+            icon: iconAward,
             number: 2,
             desc: "Awards Won"
         }
     ];
+
     useScrollFadeIn();
 
     return (
@@ -34,7 +43,7 @@ export default function Stats() {
                         <picture className="cs-picture">
                             <img
                                 className="cs-icon"
-                                src={`src/assets/icons/${stat.icon}`}
+                                src={stat.icon}
                                 alt=""
                                 role="presentation"
                                 width="40"
@@ -52,13 +61,13 @@ export default function Stats() {
                 ))}
             </ul>
             <picture className="cs-background">
-                <source media="(max-width: 600px)" srcSet="/src/assets/about/stats-banner-m.webp" />
-                <source media="(min-width: 601px)" srcSet="/src/assets/about/stats-banner-d.webp" />
+                <source media="(max-width: 600px)" srcSet={bannerMobile} />
+                <source media="(min-width: 601px)" srcSet={bannerDesktop} />
                 <img
                     aria-hidden="true"
                     loading="lazy"
                     decoding="async"
-                    src="/src/assets/about/stats-banner-d.webp"
+                    src={bannerDesktop}
                     alt="mechanic"
                     width="1920"
                     height="283"
