@@ -1,7 +1,15 @@
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
+
+// ✅ Import icons and logo
+import phoneIcon from "../../assets/icons/phone-grey.svg";
+import clockIcon from "../../assets/icons/clock-grey.svg";
+import facebookIcon from "../../assets/icons/face-grey.svg";
+import twitterIcon from "../../assets/icons/twit-grey.svg";
+import instagramIcon from "../../assets/icons/insta-grey.svg";
+import dropdownIcon from "../../assets/icons/chev-down.svg";
+import logo from "../../assets/images/logos/logo.svg";
 
 export default function Navbar() {
     const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -11,18 +19,15 @@ export default function Navbar() {
     const navRef = useRef(null);
     const ulRef = useRef(null);
 
-    // Toggle mobile nav
     const handleToggle = () => {
         setMobileNavOpen((prev) => !prev);
         document.body.classList.toggle("cs-open");
     };
 
-    // Toggle dropdown (mobile)
     const handleDropdownToggle = () => {
         setDropdownOpen((prev) => !prev);
     };
 
-    // Scroll behavior for body class
     useEffect(() => {
         const onScroll = () => {
             setScrollActive(window.scrollY >= 100);
@@ -31,12 +36,10 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
-    // Apply scroll class to <body>
     useEffect(() => {
         document.body.classList.toggle("scroll", scrollActive);
     }, [scrollActive]);
 
-    // Update aria-expanded
     useEffect(() => {
         if (ulRef.current) {
             ulRef.current.setAttribute("aria-expanded", mobileNavOpen ? "true" : "false");
@@ -49,25 +52,31 @@ export default function Navbar() {
                 <div className="cs-top-container">
                     <div className="cs-top-contact">
                         <a href="#" className="cs-top-link">
-                            <img className="cs-link-icon" src="/src/assets/icons/phone-grey.svg" alt="phone icon" />
+                            <img className="cs-link-icon" src={phoneIcon} alt="phone icon" />
                             Call us: +84 1985 33 999
                         </a>
                         <a href="#" className="cs-top-link">
-                            <img className="cs-link-icon" src="/src/assets/icons/clock-grey.svg" alt="clock icon" />
+                            <img className="cs-link-icon" src={clockIcon} alt="clock icon" />
                             Opening hours: Mon - Sat: 8:00am To 9:00pm
                         </a>
                     </div>
                     <div className="cs-top-social">
-                        <a href="#" className="cs-social-link"><img className="cs-social-icon" src="/src/assets/icons/face-grey.svg" alt="facebook" /></a>
-                        <a href="#" className="cs-social-link"><img className="cs-social-icon" src="/src/assets/icons/twit-grey.svg" alt="twitter" /></a>
-                        <a href="#" className="cs-social-link"><img className="cs-social-icon" src="/src/assets/icons/insta-grey.svg" alt="instagram" /></a>
+                        <a href="#" className="cs-social-link">
+                            <img className="cs-social-icon" src={facebookIcon} alt="facebook" />
+                        </a>
+                        <a href="#" className="cs-social-link">
+                            <img className="cs-social-icon" src={twitterIcon} alt="twitter" />
+                        </a>
+                        <a href="#" className="cs-social-link">
+                            <img className="cs-social-icon" src={instagramIcon} alt="instagram" />
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div className="cs-container">
                 <a href="/" className="cs-logo" aria-label="back to home">
-                    <img src="/images/logos/logo.svg" alt="logo" />
+                    <img src={logo} alt="logo" />
                 </a>
 
                 <nav className="cs-nav" role="navigation">
@@ -89,7 +98,6 @@ export default function Navbar() {
                                     Home
                                 </NavLink>
                             </li>
-
                             <li className="cs-li">
                                 <NavLink
                                     to="/about"
@@ -98,7 +106,6 @@ export default function Navbar() {
                                     About
                                 </NavLink>
                             </li>
-
                             <li
                                 className={`cs-li cs-dropdown ${dropdownOpen ? "cs-active" : ""}`}
                                 onClick={handleDropdownToggle}
@@ -106,11 +113,7 @@ export default function Navbar() {
                             >
                                 <span className="cs-li-link">
                                     Services
-                                    <img
-                                        className="cs-drop-icon"
-                                        src="/src/assets/icons/chev-down.svg"
-                                        alt="dropdown icon"
-                                    />
+                                    <img className="cs-drop-icon" src={dropdownIcon} alt="dropdown icon" />
                                 </span>
                                 <ul className="cs-drop-ul">
                                     <li className="cs-drop-li">
@@ -118,7 +121,7 @@ export default function Navbar() {
                                             to="/services/interior"
                                             className={({ isActive }) => (isActive ? "cs-li-link cs-drop-link cs-active" : "cs-li-link cs-drop-link")}
                                         >
-                                            Service 1
+                                            Interior Painting
                                         </NavLink>
                                     </li>
                                     <li className="cs-drop-li">
@@ -126,12 +129,11 @@ export default function Navbar() {
                                             to="/services/exterior"
                                             className={({ isActive }) => (isActive ? "cs-li-link cs-drop-link cs-active" : "cs-li-link cs-drop-link")}
                                         >
-                                            Service 2
+                                            Exterior Painting
                                         </NavLink>
                                     </li>
                                 </ul>
                             </li>
-
                             <li className="cs-li">
                                 <NavLink
                                     to="/projects"
@@ -140,18 +142,18 @@ export default function Navbar() {
                                     Projects
                                 </NavLink>
                             </li>
-
-                            {/* <li className="cs-li">
+                            {/* 
+                            <li className="cs-li">
                                 <NavLink
                                     to="/contact"
                                     className={({ isActive }) => (isActive ? "cs-li-link cs-active" : "cs-li-link")}
                                 >
                                     Contact
                                 </NavLink>
-                            </li> */}
+                            </li> 
+                            */}
                         </ul>
                     </div>
-
                 </nav>
 
                 <a href="/contact" className="cs-button-solid cs-nav-button">Contact Us</a>
