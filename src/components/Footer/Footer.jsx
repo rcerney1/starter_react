@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
+// ✅ Import logo
+import logo from "../../assets/logos/logo2.svg";
+
 export default function Footer() {
     return (
         <footer id="footer-2345">
             <div className="cs-container">
-                {/* <div className="cs-cta">
+                {/* 
+                <div className="cs-cta">
                     <h2 className="cs-title">
                         Ready to Transform Your Home?
                         Leave us a message and a team member will reach out shortly. We’re excited to bring your vision to life with a fresh coat of paint!
@@ -13,14 +17,15 @@ export default function Footer() {
                     <Link to="/contact" className="cs-button-solid">
                         Contact Us Today!
                     </Link>
-                </div> */}
+                </div> 
+                */}
 
                 <div className="cs-wrapper">
                     <div className="cs-content">
                         <Link to="/" className="cs-logo">
                             <img
                                 className="cs-logo-img"
-                                src="/images/logos/logo2.svg"
+                                src={logo}
                                 alt="logo"
                                 width="174"
                                 height="28"
