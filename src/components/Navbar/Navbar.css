@@ -712,7 +712,7 @@
 
     #cs-navigation .cs-logo {
         /* 40px - 44px */
-        height: clamp(2.5rem, 4vw, 2.75rem);
+        height: clamp(3.5rem, 6vw, 4rem);
         /* margin-right auto pushes everything away from it to the right */
         margin: 0 auto 0 0;
         padding: 0;
