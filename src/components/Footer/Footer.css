@@ -155,7 +155,7 @@
     color: var(--bodyTextColorWhite);
   }
   #footer-2345 .cs-logo {
-    width: 10.875rem;
+    width: 16rem;
     height: auto;
     display: block;
     position: relative;
@@ -163,7 +163,7 @@
   }
   #footer-2345 .cs-logo-img {
     width: 100%;
-    height: auto;
+    height: 200%;
     display: block;
   }
   #footer-2345 .cs-flex {
